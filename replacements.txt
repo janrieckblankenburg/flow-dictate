@@ -1,0 +1,19 @@
+# Hard corrections applied after transcription, format: wrong => right
+# Matches whole words, case-insensitive.
+Softer => Softr
+# Terms Whisper keeps mangling even though they are in vocabulary.txt — the
+# prompt only biases spelling, it cannot force it. "Webhook" in particular comes
+# back in a new shape most times it is misheard, so this list will never be
+# complete; add whatever you catch. (The Haiku cleanup pass would fix these
+# from context in one go, but it is off without an API key.)
+Wetthook => Webhook
+Wett-Hook => Webhook
+Web-Hook => Webhook
+Wethok => Webhook
+Wethook => Webhook
+Wethug => Webhook
+Wetthock => Webhook
+Wetthug => Webhook
+Roll-Up => Rollup
+R-Table => Airtable
+Air-Table => Airtable

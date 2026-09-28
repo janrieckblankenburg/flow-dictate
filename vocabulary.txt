@@ -1,0 +1,15 @@
+# One term per line. Whisper is biased toward these spellings,
+# and the cleanup pass corrects to exactly this form.
+Airtable
+Make.com
+Softr
+Rollup
+Lookup
+Blueprint
+Slack
+Webhook
+Base
+Record
+Interface
+Acme Corp
+Jane Doe

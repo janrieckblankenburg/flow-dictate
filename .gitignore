@@ -1,0 +1,13 @@
+# Environment and caches
+.venv/
+__pycache__/
+*.pyc
+
+# Runtime state, not source
+.instance.lock
+flow-dictate.log
+flow-dictate.log.*
+
+# Personal dictation data — never versioned
+history.jsonl
+.env

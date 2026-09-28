@@ -1,0 +1,22 @@
+# Pinned on purpose. dictate.py patches mlx_whisper's AudioEncoder internals
+# (_enable_short_windows) and calls mlx_whisper.decoding directly, so letting
+# these float could produce an app that imports fine and transcribes garbage.
+# Bump deliberately, then dictate something and read the result.
+mlx-whisper==0.4.3
+mlx==0.32.0
+numpy==2.4.6
+
+# Audio capture and the global fn hotkey
+sounddevice==0.5.5
+pynput==1.8.2
+
+# Menu bar, overlay, settings window. pyobjc-framework-Quartz is NOT a rumps
+# dependency (rumps pulls in Cocoa only), but dictate.py imports Quartz for the
+# event tap — without it the app starts with no menu bar and no overlay, then
+# raises NameError on the first fn press.
+rumps==0.4.0
+pyobjc-framework-Cocoa==12.2.2
+pyobjc-framework-Quartz==12.2.1
+
+# Optional: the Haiku cleanup pass. Harmless without ANTHROPIC_API_KEY.
+anthropic==0.117.0
